@@ -7,8 +7,9 @@ ul {
     background-color: #f1f1f1;
   
 }
-
-
+main{
+    padding-top:40px;   
+}
 li a {
     display: block;
     padding: 8px;
@@ -121,4 +122,14 @@ li a:hover:not(.active) {
     transform: rotate(-45deg);
     top: 21px;
     left: 8px;
+}
+
+.contact-us-text {
+    text-align: center;
+}
+
+.independence-p1 {
+    text-align: center;
+    padding: 30px;
+    letter-spacing: 2px;
 }

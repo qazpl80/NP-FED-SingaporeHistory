@@ -5,6 +5,7 @@ ul {
     padding: 0;
     width: 200px;
     background-color: #f1f1f1;
+  
 }
 
 
@@ -12,13 +13,14 @@ li a {
     display: block;
     padding: 8px;
     text-decoration: none;
+   
 }
 
-.navbar {
-    height: auto;
-    background-color:transparent;  
-}
 
+button{
+    outline:none !important;
+    border:none !important;
+}
 li a.active {
     background-color: #555;
     color: black;

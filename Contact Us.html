@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="author" content="Team" />
-    <meta name="description" content="Support Us.html" />
+    <meta name="description" content="Contact Us.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/contactus.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/footer.css">
@@ -23,17 +24,49 @@
                 <div w3-include-html="header.html"></div>
             </div>
         </div>
-        <div class="contact-us-text">
-            <h1>Contact Us!</h1>
-            <p>
-                Gladys Chua Ling Hui    : +65-9248-3482     :<a href="mailto:gclh@gmail.com">gclh@gmail.com</a><br />
-                Tan Yuan Ming           : +65-9234-5678     :<a href="mailto:tym@gmail.com">tym@gmail.com</a><br />
-                Chua Zhe Yu             : +65-9830-2820     :<a href="mailto:czy@gmail.com">czy@gmail.com</a><br />
-                Ng Tze Keat             : +65-8765-4321     :<a href="mailto:ntk@gmail.com">ntk@gmail.com</a><br />
-                Sim Jie Ren             : +65-8828-0680     :<a href="mailto:sjr@gmail.com">sjr@gmail.com</a><br />
-            </p>
-        </div>
+        <main>
+            <div class="contact-us-text contact-us-color">
+                <h1>Contact Us!</h1>
+                <p>
+                    Gladys Chua Ling Hui    : +65-9248-3482     :<a href="mailto:gclh@gmail.com">gclh@gmail.com</a><br />
+                    Tan Yuan Ming           : +65-9234-5678     :<a href="mailto:tym@gmail.com">tym@gmail.com</a><br />
+                    Chua Zhe Yu             : +65-9830-2820     :<a href="mailto:czy@gmail.com">czy@gmail.com</a><br />
+                    Ng Tze Keat             : +65-8765-4321     :<a href="mailto:ntk@gmail.com">ntk@gmail.com</a><br />
+                    Sim Jie Ren             : +65-8828-0680     :<a href="mailto:sjr@gmail.com">sjr@gmail.com</a><br />
+                </p>
 
+
+                <!--Yuan Ming's Form-->
+                <form>
+                    <h1>Submit Support Ticket</h1>
+                    <fieldset>
+                        <label>Email:</label>
+                        <input type="email" name="semail" size="40" required />
+                    </fieldset>
+                    <fieldset>
+                        <label>
+                            What can we help you with?<br />
+                            <select required>
+                                <option>Please select...</option>
+                                <option>Technical Support</option>
+                                <option>Informational Support</option>
+                                <option>Request</option>
+                                <option>Others</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        Please explain in details:<br />
+                        <textarea rows="15" cols="80" form="message"></textarea>
+                    </fieldset>
+                    <p>
+                        <input type="submit" onclick="" />
+                    </p>
+                    <script src="contactusform.js"></script>
+                </form>
+            </div>
+            <!--End-->
+        </main>
         <div>
             <div>
 

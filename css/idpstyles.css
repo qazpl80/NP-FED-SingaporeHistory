@@ -1,0 +1,33 @@
+﻿.independence-p1 {
+    text-align: center;
+    padding: 30px;
+    letter-spacing: 2px;
+    background-color: dimgray;
+}
+
+.independencebody {
+    text-align: center;
+    padding: 30px;
+    letter-spacing: 2px;
+    background-color: #0e0e0e;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}

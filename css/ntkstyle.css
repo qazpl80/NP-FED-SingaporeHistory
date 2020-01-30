@@ -1,0 +1,34 @@
+﻿#container
+{
+    height:2000px;    
+}
+
+#container DIV
+{ 
+    margin:50px; 
+    padding:50px; 
+    background-color:pink; 
+}
+.hideme
+{
+    opacity:0;
+}
+body, html {
+    height: 100%;
+}
+.parallax {
+    background-image: url("media/portsg.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+encompassing {
+    height:1000px;
+    background-color:black;
+    font-size:36px;
+}
+section{
+    color:white;
+}

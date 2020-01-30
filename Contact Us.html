@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/contactus.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/contactusform.js"></script>
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/w3.js"></script>
@@ -17,15 +18,16 @@
     <title>Contact Us</title>
 </head>
 <body>
-    <div>
+    <div class="contact-us-body">
         <div>
             <div>
 
                 <div w3-include-html="header.html"></div>
             </div>
         </div>
+
         <main>
-            <div class="contact-us-text contact-us-color">
+            <div class="contact-us-text contact-us-body">
                 <h1>Contact Us!</h1>
                 <p>
                     Gladys Chua Ling Hui    : +65-9248-3482     :<a href="mailto:gclh@gmail.com">gclh@gmail.com</a><br />
@@ -37,32 +39,33 @@
 
 
                 <!--Yuan Ming's Form-->
-                <form>
-                    <h1>Submit Support Ticket</h1>
+                <form class="contactform" id="form" onsubmit="submitForm(); resetForm(); return false">
+                    <h2>Submit Support Ticket</h2>
                     <fieldset>
-                        <label>Email:</label>
-                        <input type="email" name="semail" size="40" required />
+                        <label for="iemail">Email:</label>
+                        <input type="email" name="semail" size="40" class="input" id="iemail" required />
                     </fieldset>
                     <fieldset>
-                        <label>
+                        <label for="ihelp">
                             What can we help you with?<br />
-                            <select required>
-                                <option>Please select...</option>
-                                <option>Technical Support</option>
-                                <option>Informational Support</option>
-                                <option>Request</option>
-                                <option>Others</option>
+                            <select class="input" id="ihelp" required>
+                                <option value="" selected disabled hidden>Please Select...</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="informational">Informational Support</option>
+                                <option value="request">Request</option>
+                                <option value="others">Others</option>
                             </select>
                         </label>
                     </fieldset>
                     <fieldset>
                         Please explain in details:<br />
-                        <textarea rows="15" cols="80" form="message"></textarea>
+                        <textarea rows="15" cols="80" spellcheck="true"></textarea>
                     </fieldset>
                     <p>
-                        <input type="submit" onclick="" />
+                        <input type="submit">
+                        <input type="reset" onclick="resetForm()" />
                     </p>
-                    <script src="contactusform.js"></script>
+                    <p id="message"></p>
                 </form>
             </div>
             <!--End-->

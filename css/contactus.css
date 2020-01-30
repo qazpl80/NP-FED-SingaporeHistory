@@ -1,9 +1,36 @@
 ﻿.contact-us-text {
     text-align: center;
-    padding:30px;
+    padding: 30px;
+    word-wrap: normal;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family:Arial;
 }
 
-.contact-us-color{
-    background-color:grey;
-    color:black;
+.contact-us-body {
+    background-image: url("../media/wood.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+.contactform {
+    text-align: left;
+    right: 50%;
+    width: auto;
+    height: auto;
+    font-family: Arial;
+    padding: 30px;
+    background-color:#111111
+}
+
+main {
+    padding: 0 !important;
+}
+
+form {
+    border: 10px solid grey;
+    padding:10px;
+    display:inline-block;
 }

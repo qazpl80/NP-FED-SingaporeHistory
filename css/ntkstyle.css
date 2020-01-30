@@ -1,0 +1,40 @@
+﻿#container
+{
+    height:2000px;    
+}
+
+#container DIV
+{ 
+    margin:50px; 
+    padding:50px; 
+    background-color:pink; 
+}
+.hideme
+{
+    opacity:0;
+}
+body, html {
+    height: 100%;
+}
+.parallax {
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+encompassing {
+    height:1000px;
+}
+section{
+    color:black;
+    font-family:'Cambria';
+    font-size:24px
+
+}
+b{
+    color:white;
+    font-family:'Times New Roman';
+    font-size:25px
+
+}

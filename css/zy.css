@@ -1,0 +1,21 @@
+﻿html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.caption{
+    background-color: black;
+}
+
+img:hover{
+    text-decoration: none;
+}
+
+.border{
+    border: thin solid black;
+    padding: 10px;
+}
+

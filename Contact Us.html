@@ -39,7 +39,7 @@
 
 
                 <!--Yuan Ming's Form-->
-                <form class="contactform" id="form" submitForm(); return false">
+                <form class="contactform" id="form" onsubmit="submitForm(); resetForm(); return false">
                     <h2>Submit Support Ticket</h2>
                     <fieldset>
                         <label for="iemail">Email:</label>
@@ -49,11 +49,11 @@
                         <label for="ihelp">
                             What can we help you with?<br />
                             <select class="input" id="ihelp" required>
-                                <option>Please select...</option>
-                                <option>Technical Support</option>
-                                <option>Informational Support</option>
-                                <option>Request</option>
-                                <option>Others</option>
+                                <option value="" selected disabled hidden>Please Select...</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="informational">Informational Support</option>
+                                <option value="request">Request</option>
+                                <option value="others">Others</option>
                             </select>
                         </label>
                     </fieldset>

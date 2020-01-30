@@ -12,16 +12,12 @@
 }
 
 .contactform {
-    padding: 5px;
     text-align: left;
     right: 50%;
     width: auto;
     height: auto;
-    border: groove;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 30px;
-    border: 10px solid grey;
     font-family: Arial;
+    padding: 30px;
 }
 
 contact-us-body {
@@ -29,4 +25,14 @@ contact-us-body {
     padding: 30px;
     letter-spacing: 2px;
     background-color: #000000;
+}
+
+main {
+    padding: 0 !important;
+}
+
+form {
+    border: 10px solid grey;
+    padding:10px;
+    display:inline-block;
 }

@@ -9,15 +9,25 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/slider.css" />
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/japanese.css" />
     <script src="js/w3.js"></script>
     <script src="js/navbar.js"></script>
-    <script src="js/scripts.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Morphext/2.4.4/morphext.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/carousel.js"></script>
+
+
     <title></title>
 </head>
 <body>
-    <div>
+    <div >
         <div>
             <div>
 
@@ -26,45 +36,193 @@
             </div>
         </div>
         <!-- makes navbar occupy only top left of screen -->
+
         <main>
-            <div>
-                <section>Propaganda</section>
-                <section>
-                    <h1>SookChing Massacre 18 Feb to 4 March 1942</h1> <!--https://wakeupsg.com/2017/01/30/blog-post-title/-->
-                </section>
-                <section>Law enforcements</section>
-                <section>Law/Rules</section>
+            <!--/// HERO SECTION ///
+    <div id="jap" class="small-margin">
+        <div class="row jap">
+            <div class="col-md-5">
+                <div class="caption">
+                     Main Tagline
+                    <h1>  <br> <span id="moving-text" class="colored">PROPAGANDA, LAW ENFORCEMENTS AND RULES, SOOK CHING MASSACRE</span> <br> IN SINGAPORE <br></h1>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div id="war-slider" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="media/propaganda.jpg" class="d-block w-100" alt="img"> https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nas.gov.sg%2Fformerfordfactory%2Fexhibition&psig=AOvVaw289wmDk2NKK2ji5z7ZWvp-&ust=1580413745115000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOie9JbKqecCFQAAAAAdAAAAABBC>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="media/kempeitai.jpg" class="d-block w-100" alt="img">https://militaryhistorynow.com/2017/12/12/meet-the-kempeitai-the-gestapo-of-imperial-japan/
+                        </div>
+                        <div class="carousel-item">
+                            <img src="media/Sook-Ching.jpeg" class="d-block w-100" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     /// HERO SECTION ///-->
+            <!-- /// animated SECTION /// -->
+            <div id="japanese-section" class="small-margin">
+                <div class="row japanese">
+                    <div class="col-md-5">
+                        <div class="jap-caption">
+                            <!-- Main Tagline -->
+                            <h1>JAPANESE <br> <span id="moving-text" class="colored">PROPAGANDA ,LAW ENFORCEMENTS AND RULES, SOOK CHING MASSACRE</span> <br> IN SINGAPORE <br></h1>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div id="jap-slider" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../media/Sook-Ching.jpeg" class="d-block w-100  " alt="propaganda">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="media/propaganda.jpg" class="d-block w-100 " alt="kempeitai">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="media/kempeitai.jpg" class="d-block w-100" alt="Sook Ching">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section End -->
+            <!--Timeline carousel-->
+            <!--Timeline carousel-->
+            <section class="timeline-carousel">
+                <h1>History timeline</h1>
+                <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
+                    <!--Timeline item-->
+                    <div class="timeline-carousel__item">
+                        <div class="timeline-carousel__image">
+                            <div class="media-wrapper media-wrapper--overlay" style="background: url('https://www.historyonthenet.com/wp-content/uploads/2016/12/135151-004-0D4D550E.jpg') center center; background-size:cover;"></div>
+                        </div>
+                        <div class="timeline-carousel__item-inner">
+                            <span class="year">1914</span>
+                            <span class="month">June 28</span>
+                            <p>Assassination of Archduke Franz Ferdinand of Austria, heir to the Austro-Hungarian throne, who was killed in Sarajevo along with his wife Duchess Sophie by Bosnian Serb Gavrilo Princip.</p>
+                            <a href="#" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                    <!--/Timeline item-->
+                    <!--Timeline item-->
+                    <div class="timeline-carousel__item">
+                        <div class="timeline-carousel__image">
+                            <div class="media-wrapper media-wrapper--overlay" style="background: url('http://factsforkids.net/wp-content/uploads/2013/09/13.jpg') center center; background-size:cover;"></div>
+                        </div>
+                        <div class="timeline-carousel__item-inner">
+                            <div class="pointer"></div>
+                            <span class="month">July 5	</span>
+                            <p>Austria-Hungary seeks German support for a war against Serbia in case of Russian militarism. Germany gives assurances of support.</p>
+                            <a href="#" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                    <!--/Timeline item-->
+                    <!--Timeline item-->
+                    <div class="timeline-carousel__item">
+                        <div class="timeline-carousel__image">
+                            <div class="media-wrapper media-wrapper--overlay" style="background: url('https://cdn-images-1.medium.com/max/2000/1*tjpdoOeFp6PfczMjqh6JEA.jpeg') center center; background-size:cover;"></div>
+                        </div>
+                        <div class="timeline-carousel__item-inner">
+                            <span class="year">1915</span>
+                            <span class="month">January 2</span>
+                            <p>The Russian offensive in the Carpathians begins. It will continue until April 12.	</p>
+                            <a href="#" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                    <!--/Timeline item-->
+                    <!--Timeline item-->
+                    <div class="timeline-carousel__item">
+                        <div class="timeline-carousel__image">
+                            <div class="media-wrapper media-wrapper--overlay" style="background: url('https://ichef-1.bbci.co.uk/news/660/media/images/72349000/jpg/_72349652_generals-on-horseback.jpg') center center; background-size:cover;"></div>
+                        </div>
+                        <div class="timeline-carousel__item-inner">
+                            <div class="pointer"></div>
+                            <span class="month">January 18–19	</span>
+                            <p>Battle of Jassin.	</p>
+                            <a href="#" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                    <!--/Timeline item-->
+                    <!--Timeline item-->
+                    <div class="timeline-carousel__item">
+                        <div class="timeline-carousel__image">
+                            <div class="media-wrapper media-wrapper--overlay" style="background: url('https://thechive.files.wordpress.com/2014/05/world-war-1-photography-30.jpg?quality=85&strip=info&w=550') center center; background-size:cover;"></div>
+                        </div>
+                        <div class="timeline-carousel__item-inner">
+                            <span class="year">1916</span>
+                            <span class="month">January 5–17</span>
+                            <p>Austro-Hungarian offensive against Montenegro, which capitulates.	</p>
+                            <a href="#" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                    <!--/Timeline item-->
+                    <!--Timeline item-->
+                    <div class="timeline-carousel__item">
+                        <div class="timeline-carousel__image">
+                            <div class="media-wrapper media-wrapper--overlay" style="background: url('https://kidskonnect.com/wp-content/uploads/2010/10/Approaching_Omaha.jpg') center center; background-size:cover;"></div>
+                        </div>
+                        <div class="timeline-carousel__item-inner">
+                            <div class="pointer"></div>
+                            <span class="month">January 6–7	</span>
+                            <p>Battle of Mojkovac.	</p>
+                            <a href="#" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                    <!--/Timeline item-->
+                </div>
+            </section>
+     
 
-                
 
-                <toggle-section open="false">
-                    <h2>Sook Ching Massacre 18 Feb to 4 March 1942</h2>
-                    <p>
-                        The Kempeitai,the Japanese Military Police  , which was the dominant occupation unit in Singapore, committed numerous atrocities towards the common people. They introduced the system of "Sook Ching", meaning "purging through purification" in Chinese, to get rid of those, especially so ethnic Chinese, deemed to be hostile to the Empire of Japan.
-                        For 14 days between 18 February to 4 March 1942, all Chinese males aged 18-50 were ordered to report to screening Centers across the country. The Japanese occupiers were intentional in their efforts to root out any and all resistance within the Chinese community. By the most arbitrary means at their disposal, the Japanese began weeding out the potential troublemakers – often without any evidence. Hooded informants would point out the individuals who were involved in “anti Japanese activities” or who had contributed to the war effort in China. Individuals who “failed” the screening process were loaded onto trucks, driven to remote locations across Singapore and summarily executed. The corpses would then be buried in mass graves, hidden out of sight from the rest of the population.
 
-                        The secrecy of the killings meant the families of the victims had no knowledge of their loved ones’ deaths till after the war when the mass graves were dug up. Conservative estimates put the death toll of the Sook Ching Massacre at 25,000. That figure represents approximately 3.14% of the total population of 795,000 at the time. Higher estimates of 40,000 dead would put that figure at approximately 5.03%. The rate at which people were being killed was exceptionally high, given the short amount of time the Japanese took to execute Sook Ching. It was slaughter at an industrial scale and it forever altered the landscape, society and destiny of Singapore.
-                        Even after 75 years, the legacy of the Sook Ching Massacre is still being felt in one way or another. Almost every Chinese household that traces its roots to pre WW2 Singapore has lost at least one member of the family. The brutality of the massacre and Japanese subjugation sparked a political awakening in the local Chinese community. After the war, more individuals became actively involved in pro independence, anti colonialist movements. It was from the bloodshed of WW2 and left wing revolutionary fervour in the immediate post war years that the PAP was first founded. The disproportionate rate at which the Chinese were singled out for acts of brutality widened the rift between the Chinese and Malay community. These tensions would be played out on the streets during the racial riots of 1964, nearly 2 decades after the end of WW2. The painful memories of occupation was the primary motivation for the Pioneer leaders of Singapore prioritise national defence to guard Singapore’s sovereignty. Till this day, all male Singaporeans have to serve 2 years of National Service in the SAF or SCDF. Few events in our past have left such a profound impact on our culture and society.
 
-                        The Sook Ching Massacre remains one of the darkest chapters in Singapore’s history. Looking back at the events of 1942, one can’t help but to bemoan and lament the tens of thousands of lives that were cut short. They were fathers, brothers, uncles, sons, Neighbours, friends – real people with real stories. Their deaths left a void in society that remained long after the war ended.
+            <section>Propaganda</section>
 
-                        In March 1962, the first mass graves of the Sook Ching Massacre were dug up. The discovery of thousands of human remains confirmed the worst fears of the families that theirs missing loved ones were dead. Grief quickly turned to anger as the Chinese community demanded reparations be paid by the Japanese Government to atone for the war crimes committed during the Japanese Occupation. A mass protest attended by more than 120,000 people was held at City Hall on 25 August 1963. Dubbed as the “blood debt” rally, it was organised by the Singapore Chinese Chamber of Commerce (SCCC) and supported by the Singapore government. The purpose of the rally was to press the Japanese government for a compensation or “blood debt” amount of no less than M$50 million. Prime Minister Lee Kuan Yew who was himself, a survivor of the Sook Ching Massacre was one of the speakers. With nearly 10% of Singapore’s total population in attendance, the “Blood Debt Rally” remains the largest protest ever organised in the history of Singapore.
-                    </p>
-                </toggle-section>
-                <toggle-section open="true">
-                    <h2>Section 2</h2>
-                    <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p>
-                    <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
-                </toggle-section>
-</main>
-       
+            <section>Law enforcements</section>
+            <section>Law/Rules</section>
+            <button onclick="myfnc()">Japanese Propaganda</button><!--https://military.wikia.org/wiki/Japanese_occupation_of_Singapore-->
+
+            <div id="slider" class="transition">
+                <p>
+                    In order to remove Western influence, the Japanese set up schools to teach the people the Japanese language. Textbooks were printed in Japanese. Every morning, the children had to stand facing the direction of Japan and sing the Japanese national anthem.
+
+                    In the cinemas, only Japanese movies and propaganda films were shown. These films showed the virtues of the Japanese and made fun of the British. Going to the cinemas had its dangers too since the Japanese might suddenly appear and take away young men to work on the Death Railway. Sometimes, the Japanese would plant themselves in the cinemas and would listen secretly to conversations, hoping to overhear anti-Japanese remarks.
+
+                    The local Chinese and English newspapers had very little local news. Most of what was reported was the Japanese version of the war and pro-Japanese speeches. Radio stations were controlled by the Japanese and radio owners could listen only to local broadcasts. Tuning in to foreign broadcasting stations was done at great risk. Those caught doing so were severely punished or even killed.
+
+
+                </p>
+            </div>
+            <button onclick="myfunction()">SookChing Massacre 18 Feb to 4 March 1942</button>
+
+            <div id="slider2" class="transition">
+                <p>
+                    The Kempeitai,the Japanese Military Police  , which was the dominant occupation unit in Singapore, committed numerous atrocities towards the common people. They introduced the system of "Sook Ching", meaning "purging through purification" in Chinese, to get rid of those, especially so ethnic Chinese, deemed to be hostile to the Empire of Japan.
+                    For 14 days between 18 February to 4 March 1942, all Chinese males aged 18-50 were ordered to report to screening Centers across the country. The Japanese occupiers were intentional in their efforts to root out any and all resistance within the Chinese community. By the most arbitrary means at their disposal, the Japanese began weeding out the potential troublemakers – often without any evidence. Hooded informants would point out the individuals who were involved in “anti Japanese activities” or who had contributed to the war effort in China. Individuals who “failed” the screening process were loaded onto trucks, driven to remote locations across Singapore and summarily executed. The corpses would then be buried in mass graves, hidden out of sight from the rest of the population.
+
+                    The secrecy of the killings meant the families of the victims had no knowledge of their loved ones’ deaths till after the war when the mass graves were dug up. Conservative estimates put the death toll of the Sook Ching Massacre at 25,000. That figure represents approximately 3.14% of the total population of 795,000 at the time. Higher estimates of 40,000 dead would put that figure at approximately 5.03%. The rate at which people were being killed was exceptionally high, given the short amount of time the Japanese took to execute Sook Ching. It was slaughter at an industrial scale and it forever altered the landscape, society and destiny of Singapore.
+                    Even after 75 years, the legacy of the Sook Ching Massacre is still being felt in one way or another. Almost every Chinese household that traces its roots to pre WW2 Singapore has lost at least one member of the family. The brutality of the massacre and Japanese subjugation sparked a political awakening in the local Chinese community. After the war, more individuals became actively involved in pro independence, anti colonialist movements. It was from the bloodshed of WW2 and left wing revolutionary fervour in the immediate post war years that the PAP was first founded. The disproportionate rate at which the Chinese were singled out for acts of brutality widened the rift between the Chinese and Malay community. These tensions would be played out on the streets during the racial riots of 1964, nearly 2 decades after the end of WW2. The painful memories of occupation was the primary motivation for the Pioneer leaders of Singapore prioritise national defence to guard Singapore’s sovereignty. Till this day, all male Singaporeans have to serve 2 years of National Service in the SAF or SCDF. Few events in our past have left such a profound impact on our culture and society.
+
+                    The Sook Ching Massacre remains one of the darkest chapters in Singapore’s history. Looking back at the events of 1942, one can’t help but to bemoan and lament the tens of thousands of lives that were cut short. They were fathers, brothers, uncles, sons, Neighbours, friends – real people with real stories. Their deaths left a void in society that remained long after the war ended.
+
+                </p>
+            </div>
+
+        </main>
+
         <div>
             <div>
 
                 <div w3-include-html="footer.html"></div>
             </div>
         </div>
-        
+
     </div>
     <script>
         w3.includeHTML();

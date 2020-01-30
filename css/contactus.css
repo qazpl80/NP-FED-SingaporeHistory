@@ -6,9 +6,13 @@
     font-family:Arial;
 }
 
-.contact-us-color{
-    background-color:#161616;
-    color:white;
+.contact-us-body {
+    background-image: url("../media/wood.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    color: white;
+    background-position: center;
+    background-size: cover;
 }
 
 .contactform {
@@ -18,13 +22,7 @@
     height: auto;
     font-family: Arial;
     padding: 30px;
-}
-
-contact-us-body {
-    text-align: center;
-    padding: 30px;
-    letter-spacing: 2px;
-    background-color: #000000;
+    background-color:#111111
 }
 
 main {

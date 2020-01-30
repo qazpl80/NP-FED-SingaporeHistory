@@ -1,0 +1,50 @@
+﻿
+main{
+    padding:0 !important;
+}
+
+#jap-slider .carousel-item img {
+    max-height:500px;
+    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+}
+
+/* -Text animation timing- */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+/* -Hero Image- */
+
+.japanese {
+    background-color: #111;
+    height: 100vh;
+}
+
+/* -Hero Image Caption- */
+
+.jap-caption {
+    display: block;
+    position: relative;
+    margin-top: 35vh;
+    color: #FFF;
+    text-shadow: none;
+    padding: 20px;
+    z-index: 5;
+    text-align: right;
+    transform: translateY(-50%);
+ 
+    bottom: initial;
+}
+
+    .jap-caption h1 {
+        font-weight: bold;
+        font-size: 3rem;
+        font-family: Raleway, sans-serif;
+    }
+
+.morphext > .animated {
+    display: inline-block;
+}

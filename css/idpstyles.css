@@ -2,26 +2,27 @@
     text-align: center;
     padding: 30px;
     letter-spacing: 2px;
-    background-color: dimgray;
+    background-color: #4d1a00;
+    color:white;
+    border: thick #0e0e0e;
+    border-style: solid;
 }
 
 .independencebody {
     text-align: center;
     padding: 30px;
     letter-spacing: 2px;
-    background-color: #0e0e0e;
+    background-color: #000000;
+}
+
+.carousel {
+    position: relative;
 }
 
 .carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 20px;
-    left: 15%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #000000;
+    color: white;
     text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .d-block {
@@ -30,4 +31,58 @@
 
 .w-100 {
     width: 100% !important;
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-property: opacity;
+    -webkit-transform: none;
+    transform: none;
+}
+
+.independence-h1 {
+    color: white;
+    padding: 30px;
+    letter-spacing: 2px;
+    border: thick #0e0e0e;
+    border-style: solid;
+    background-color: #4d1a00;
+}
+.indcontainer {
+    position: relative;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: auto;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }

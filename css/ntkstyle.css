@@ -1,0 +1,26 @@
+﻿#container
+{
+    height:2000px;    
+}
+
+#container DIV
+{ 
+    margin:50px; 
+    padding:50px; 
+    background-color:pink; 
+}
+.hideme
+{
+    opacity:0;
+}
+body, html {
+    height: 100%;
+}
+.parallax {    
+    background-image: url("media/peopleunderunionjacksingaporeold.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

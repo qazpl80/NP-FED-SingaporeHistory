@@ -13,6 +13,7 @@
     padding: 30px;
     letter-spacing: 2px;
     background-color: #000000;
+    font-family: Arial;
 }
 
 .carousel {
@@ -47,6 +48,7 @@
     border: thick #0e0e0e;
     border-style: solid;
     background-color: #4d1a00;
+    font-family: Arial;
 }
 .indcontainer {
     position: relative;
@@ -85,4 +87,5 @@
     color: white;
     font-size: 16px;
     padding: 16px 32px;
+    font-family: Arial;
 }

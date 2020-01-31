@@ -3,25 +3,32 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <meta name="author" content="Ng Tze Keat"/>
+    <meta name="author" content="Ng Tze Keat" />
     <meta name="description" content="buymerch.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/buymerchcss.css">
     <script src="js/merchform.js"></script>
 
-    <link rel="stylesheet" href="css/footer.css">
+ 
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/w3.js"></script>
     <script src="js/navbar.js"></script>
     <title>Buy merch</title>
 </head>
 <body>
-    <form id="formal" onsubmit="ordcfm();" onreset="clear()">       
-            <h1>Order Form</h1>
+    <div>
+        <div>
+
+            <div w3-include-html="header.html"></div>
+        </div>
+    </div>
+    <form id="formal" onsubmit="ordcfm();" onreset="clear()">
+        <h1>Order Form</h1>
         <fieldset>
             <h2>Purchase:</h2>
             <label>Item:</label>
@@ -40,25 +47,28 @@
                 <label><br />Name:</label>
                 <input id="name" type="text" required />
                 <label>E-mail: </label>
-                <input id="email" type="email" required/>
+                <input id="email" type="email" required />
             </fieldset>
-            
+
             <fieldset>
                 <h2>Shipping information:</h2>
                 <label>Address Line:</label>
                 <input id="address" type="text" required />
                 <label>Postal Code:</label>
-                <input id="postalcode" type="text" pattern="[0-9]{6}" title="6 digits" required/>
+                <input id="postalcode" type="text" pattern="[0-9]{6}" title="6 digits" required />
                 <label>Country:</label>
-                <input id="country" type="text" required/>
+                <input id="country" type="text" required />
             </fieldset>
 
             <p id="output"></p>
         </fieldset>
+
         <div>
-            <input type="submit"/>
+            <input type="submit" />
             <p id='ordcfmd'></p>
         </div>
+
     </form>
+    
 </body>
 </html>

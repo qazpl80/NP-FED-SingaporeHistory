@@ -22,20 +22,15 @@ img:hover{
 
 
 
-/*orderStyles.css*/
+
 html {
     box-sizing: border-box;
 }
 
-body {
-    font-family: Verdana, Arial, serif;
-    font-size: 100%;
-    background-color: white;
-    margin: 0;
-}
+
 
 form {
-    border: 3px solid #783F27;
+    border: 3px solid #20dada;
     margin: auto;
     padding: 10px 20px;
 }
@@ -57,17 +52,7 @@ legend {
     width: auto;
 }
 
-.labelAlign {
-    display: inline-block;
-    width: 120px;
-    margin-left: 20px;
-}
 
-textarea {
-    vertical-align: top;
-    margin-bottom: 5px;
-    width: 300px;
-}
 
 .boxWidth {
     width: 300px;
@@ -76,7 +61,8 @@ textarea {
 
 
 .button{
-    padding: 5px;
+    display:inline-block;
+    margin: 3px;
     background-color: red;
     font-family: Arial;
     border-radius:5px;
@@ -112,4 +98,8 @@ p{
 
 .quizinfo{
    color:red;
+}
+
+.headerforpage{
+    background-color: #A1C935;
 }

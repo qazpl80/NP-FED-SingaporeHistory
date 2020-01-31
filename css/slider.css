@@ -12,8 +12,8 @@ main{
 /* -Text animation timing- */
 
 .animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 1.4s;
+    animation-duration: 1.4s;
 }
 
 /* -Hero Image- */
@@ -21,6 +21,7 @@ main{
 .japanese {
     background-color: #111;
     height: 100vh;
+    position:static !important;
 }
 
 /* -Hero Image Caption- */

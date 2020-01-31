@@ -2,21 +2,29 @@
     box-sizing: border-box;
 }
 main{
-    padding-top:40px;
+    margin-top:40px;
 }
 body {
     font-family: Verdana, Arial, serif;
     font-size: 100%;
-    background-color: white;
+    background-color: cornflowerblue;
     margin: 0px;
 }
 
 form {
-    background-color:cornflowerblue;
+
     margin: auto;
     padding: 10px 20px;
-}
 
+}
+.submitreset{
+    text-align:center !important;
+
+
+    bottom:-209%;
+
+    left:44%;
+}
 h1 {
     color: brown;
 }
@@ -26,7 +34,7 @@ fieldset {
     border-radius: 10px;
     border: 3px solid #783F27;
     padding: 5px 10px;
-    align-content:center;
+    
 }
 
 legend {
@@ -48,10 +56,36 @@ textarea {
 .boxWidth {
     width: 300px;
 }
-
-#totalPrice {
-    color: brown;
-    font-size: 1.5rem;
-    margin-left: 20px;
+h3, #da, #option {
+    font-size: 3vw;
 }
+#s1, #s3,#s2,#da,#option {
+
+    display: block;
+    text-align:center;
+    width: 100%;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+
+#da{
+    font-weight:bold;
+
+}
+#option{
+
+    font-family:'Comic Sans MS';
+}
+#msg {
+    font-style:italic;
+    font-size: 3vw;
+    text-align:center;
+}
+section{
+    outline:dashed 2px!important;
+    outline-color:black;
 }

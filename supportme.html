@@ -5,26 +5,32 @@
     <meta charset="utf-8" />
     <meta name="author" content="Gladys Chua Ling Hui" />
     <meta name="description" content="Donation Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/slider.css" />
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/donate.css" />
-    <script src="js/w3.js" ></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script src="js/JapSup.js"></script>
+    <script src="js/w3.js"></script>
+    <script src="js/navbar.js"></script>
+
+
     <title>Support Me</title>
 
 </head>
 <body>
     <div>
         <div>
-
-
             <div w3-include-html="header.html"></div>
         </div>
     </div>
     <main>
-        <section id="s1">
+        <section id="s1" >
             <h3>Donate $1 and receive a replica of the banana money</h3>
             <img src="media/banana money.jpg" />
 
@@ -38,11 +44,12 @@
             <h3>Donate $10 and receive a Singapore Country Eraser EarStud</h3>
             <img src="media/countryeraserstuds.jpg" />
         </section>
-        <form id="order-form" autocomplete="off">
-            <div id="option">
-                <input type="checkbox" name="money" value="1.00">$1.00
-                <input type="checkbox" name="money" value="5.00">$5.00
-                <input type="checkbox" name="money" value="10.00">$10.00
+        <form id="order-form" onsubmit="submitForm()">
+            <label id="da">Donation Amount:</label>
+            <div id="option" >
+                <input type="radio" name="money" value="1.00" onclick="msg()">$1.00
+                <input type="radio" name="money" value="5.00" onclick="msg()">$5.00
+                <input type="radio" name="money" value="10.00" onclick="msg()">$10.00
             </div>
             <fieldset>
                 <legend>Deliver to:</legend>
@@ -60,9 +67,12 @@
                 <label for="iEmail" class="labelAlign">Email:</label>
                 <input type="email" id="iEmail" class="boxWidth" name="Email" width="200" placeholder="Enter email addresses" required />
                 <br />
-                <input type="submit" value="Submit" />
-                <input type="reset" id="reset" onclick="clearMessage()" />
+                <div class="submitreset">
+                    <input type="submit" value="submit" />
+                    <input type="reset" id="reset"  />
+                </div>
             </fieldset>
+        <label id="msg"></label>
         </form>
     </main>
     <div>

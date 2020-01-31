@@ -1,14 +1,11 @@
-﻿#container
-{
-    height:2000px;    
+﻿/*#container {
+    height: 2000px;
 }
-
-#container DIV
-{ 
-    margin:50px; 
-    padding:50px; 
-    background-color:pink; 
-}
+#container DIV {
+        margin: 50px;
+        padding: 50px;
+        background-color: pink;
+}*/
 .hideme
 {
     opacity:0;

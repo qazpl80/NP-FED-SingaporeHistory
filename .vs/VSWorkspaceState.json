@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\css",
-    "\\js"
+    "\\js",
+    "\\media"
   ],
-  "SelectedNode": "\\css\\japanese.css",
+  "SelectedNode": "\\media",
   "PreviewInSolutionExplorer": false
 }

@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/supportform.js"></script>
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/support.css">
     <script src="js/w3.js"></script>
     <script src="js/navbar.js"></script>
     <title>Support Us</title>
@@ -28,23 +30,34 @@
             <form onsubmit="return validate()">
                 <fieldset class="form-field">
                     <h3>Support Us!</h3>
-                    
+
                     <label>Donate: </label>
-                    <input type="number" min="1" id="quantity" onchange="total()" required" />
+                    <input type="number" pattern="[0-9]{7}" id="donate" required />
                     <br />
-                    <label>Name</label>
-                    <input type="text" value="Peter" id="name" required />
+                    <label>First Name</label>
+                    <input type="text" id="First Name" required />
                     <br />
-                    <label>Credit Card Date: </label>
-                    <input type="date" required id="date" onchange="onDate()" />
-                    <br /><br />
-                    
+                    <label>Last Name</label>
+                    <input type="text" id="Name" required />
+                    <br />
+                    <label>Credit Card Number: </label>
+                    <input id="Card number" type="number" pattern="[0-9]{16}" title="16 digits" required />
+                    <br />
+                    <label>Credit Card Expiry Date: </label>
+                    <input type="month" required id="date" />
+                    <br />
+                    <label>CVV: </label>
+                    <input id="CVV" type="number" pattern="[0-9]{3}" title="3 digits" required />
+
                 </fieldset>
-                <input type="submit" id="submit" onclick="onSubmit()" />
-                <input type="reset" onclick="onReset()" /><br /><br />
-                <label id="Apprecite it!"></label>
+
+                <p>
+                    <input type="submit" id="submit" onclick="onSubmit()" />
+                    <input type="reset" onclick="onReset()" /><br /><br />
+                </p>
+                <p id="Donation"></p>
             </form>
-            
+
         </div>
 
         <div>
@@ -54,6 +67,7 @@
             </div>
         </div>
     </div>
+    
     <script>
         w3.includeHTML();
     </script>

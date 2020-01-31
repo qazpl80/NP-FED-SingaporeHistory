@@ -23,7 +23,7 @@ body {
 section {
 	background-color: black;
 	width: 1000px;
-	border: 15px white;
+	border: 15px;
 	padding: 50px;
 	margin: 20px;
 }

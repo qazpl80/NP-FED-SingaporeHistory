@@ -8,6 +8,22 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.p{
+    font-family:'Comic Sans MS';
+    text-align:left;
+    
+    
+}
+h1 {
+    text-shadow: 1px 1px 2px pink;
+    
+    
+}
+.click {
+    text-align: center;
+    color:dodgerblue;
+}
+
 
 
 .wrapper.container{
@@ -16,6 +32,7 @@ body {
 }
 .hidden {
     display: none;
+
 }
 
 * {
@@ -66,7 +83,7 @@ body {
     .carousel h1 {
         color: white;
         font-size: 46px;
-        line-height: 50pd;
+        line-height: 50px;
         margin-bottom: 40px;
         font-weight: 900;
     }

@@ -44,14 +44,14 @@
             <h3>Donate $10 and receive a Singapore Country Eraser EarStud</h3>
             <img src="media/countryeraserstuds.jpg" />
         </section>
-        <form id="order-form" onsubmit="submitForm()">
+        <form id="order-form" onsubmit="submitForm();return false">
             <label id="da">Donation Amount:</label>
             <div id="option" >
                 <input type="radio" name="money" value="1.00" onclick="msg()">$1.00
                 <input type="radio" name="money" value="5.00" onclick="msg()">$5.00
                 <input type="radio" name="money" value="10.00" onclick="msg()">$10.00
             </div>
-            <fieldset>
+            <fieldset id="field">
                 <legend>Deliver to:</legend>
                 <label for="iName" class="labelAlign">Name:</label>
                 <input id="iName" class="boxWidth" name="Name" type="text" autocomplete="Name" required />
@@ -69,10 +69,11 @@
                 <br />
                 <div class="submitreset">
                     <input type="submit" value="submit" />
-                    <input type="reset" id="reset"  />
+                    <input type="reset" id="reset" onclick="resetForm()" />
                 </div>
+                <label id="msg"></label>
             </fieldset>
-        <label id="msg"></label>
+        
         </form>
     </main>
     <div>

@@ -41,3 +41,13 @@ function submitForm() {
     var donationamt = donation();
     alert("Thank you for your donation of $ "+ donationamt + "," + name + ". You will also receive a free " + item + ".");
 }
+function hideTotal() {
+    var divobj = document.getElementById('field');
+    divobj.style.display = 'none';
+}
+function resetForm() {
+    document.getElementById("order-form").reset();
+    hideTotal();
+    divobj = document.getElementById("msg");
+    divobj.style.display = 'none';
+}

@@ -1,9 +1,11 @@
+
 function showSection() {
     var i;
-    for (i = 0; i < links.length; i += 1) {
+    for (i = 0; i < links.length; i ++ ) {
         document.getElementById(links[i].href.split('#')[1]).className = 'hidden';
     }
     document.getElementById(this.href.split('#')[1]).className = '';
+    
     return false;
 }
 function createShowSection(links) {

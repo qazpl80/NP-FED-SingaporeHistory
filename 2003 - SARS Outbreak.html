@@ -10,7 +10,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/Header-styles.css" />
     <link rel="stylesheet" href="css/zy.css"/>
     <script src="js/w3.js"></script>
     <script src="js/navbar.js"></script>
@@ -26,129 +26,134 @@
         </div>
     </div>
     <main>
-    <!-- Possibly make a carousel with some images -->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="carousel slide carousel-fade" id="featured" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#featured" data-slide-to="0" class="active"></li>
-                        <li data-target="#featured" data-slide-to="1"></li>
-                        <li data-target="#featured" data-slide-to="2"></li>
-                        <li data-target="#featured" data-slide-to="3"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <!--Referenece: https://www.straitstimes.com/singapore/sars-in-singapore-timeline -->
-                            <img class="d-block w-100" src="media/airport.jpg" alt="Temperature" />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3 class="caption">Temperature Screening</h3>
+        <!--
+        References:
+        https://www.straitstimes.com/singapore/sars-in-singapore-timeline Rough idea of the SARS incident
+        https://eresources.nlb.gov.sg/infopedia/articles/SIP_1529_2009-06-03.html Understanding how SARS has impacted Singapore
+        -->
+        <!-- Possibly make a carousel with some images -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="carousel slide carousel-fade" id="featured" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#featured" data-slide-to="0" class="active"></li>
+                            <li data-target="#featured" data-slide-to="1"></li>
+                            <li data-target="#featured" data-slide-to="2"></li>
+                            <li data-target="#featured" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <!--Reference: https://www.straitstimes.com/singapore/sars-in-singapore-timeline -->
+                                <img class="d-block w-100" src="media/airport.jpg" alt="Temperature" />
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3 class="caption">Temperature Screening</h3>
+                                </div>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <!--Referenece: https://www.straitstimes.com/singapore/how-singapore-learned-to-cope-with-sars-outbreak -->
-                            <img class="d-block w-100" src="media/hospital.jpg" alt="hospital" />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3 class="caption">Patients</h3>
+                            <div class="carousel-item">
+                                <!--Reference: https://www.straitstimes.com/singapore/how-singapore-learned-to-cope-with-sars-outbreak -->
+                                <img class="d-block w-100" src="media/hospital.jpg" alt="hospital" />
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3 class="caption">Patients</h3>
+                                </div>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <!--Referenece: http://www.nlb.gov.sg/biblioasia/wp-content/uploads/2019/08/ST_All-schools-closed.jpg -->
-                            <img class="d-block w-100" src="media/school closed.jpg" alt="school closed" />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3 class="caption">News on school</h3>
+                            <div class="carousel-item">
+                                <!--Reference: http://www.nlb.gov.sg/biblioasia/wp-content/uploads/2019/08/ST_All-schools-closed.jpg -->
+                                <img class="d-block w-100" src="media/school closed.jpg" alt="school closed" />
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3 class="caption">News on school</h3>
+                                </div>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <!--Referenece: https://www.tnp.sg/sites/default/files/styles/rl480/public/articles/2020/01/28/NP_20200128_HISARS24_5403430.jpg?itok=DsmAlyRR -->
-                            <img class="d-block w-100" src="media/kits.jpg" alt="supplies" />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3 class="caption">Supplies</h3>
+                            <div class="carousel-item">
+                                <!--Reference: https://www.tnp.sg/sites/default/files/styles/rl480/public/articles/2020/01/28/NP_20200128_HISARS24_5403430.jpg?itok=DsmAlyRR -->
+                                <img class="d-block w-100" src="media/kits.jpg" alt="supplies" />
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3 class="caption">Supplies</h3>
+                                </div>
+
                             </div>
 
                         </div>
-
+                        <a class="carousel-control-prev" href="#featured" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true">
+                                <span class="sr-only">Previous</span>
+                            </span>
+                        </a>
+                        <a class="carousel-control-next" href="#featured" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true">
+                                <span class="sr-only">Next</span>
+                            </span>
+                        </a>
                     </div>
-                    <a class="carousel-control-prev" href="#featured" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true">
-                            <span class="sr-only">Previous</span>
-                        </span>
-                    </a>
-                    <a class="carousel-control-next" href="#featured" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true">
-                            <span class="sr-only">Next</span>
-                        </span>
-                    </a>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="background">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="background">
+                        <section>
+                            <h1>Introduction/Origin of SARS</h1>
+                            <p>
+                                The origin of SARS took place in 2002 where a then 45-year old man from Guangdong fell ill with fever and displayed respiratory symptoms in November 2002. He then infected four relatives but was not identified as the first SARS Patient until much later.
+                            </p>
+                        </section>
+                        <section>
+                            <h1>How it came to Singapore</h1>
+                            <p>
+                                First case happened in Singapore on 1 March 2003. A woman who had been to Hong Kong fell ill and was admitted to Tan Tock Seng Hospital along with two other women. On 15 March 2003, the disease has been coined as SARS. Singapore has 16 cases at the time.
+                            </p>
+                        </section>
+                        <section>
+                            <h1>Timeline of the incidents</h1>
+                            <p>
+                                On 25 March 2003 Singapore experienced its first death from SARS. The father of the first case.
+                                A day later, a pastor who visited the first patient becomes the second person to die from SARS. Schools were then closed from March 27 to April 6. People who died from SARS must also be cremated within 24 hours. Temperature checks were also introduced for passengers entering from Singapore through Changi Airport. SGH is then hit by the outbreak and closure of schools is extended. Schools were reopened from April 9 to 16. The last patient was detected on May 18 2003 and the Singapore was declared SARS free on 30 May 2003. SARS was completely eradicated in SIngapore on July 16 2003.
+                            </p>
+                        </section>
+                        <section>
+                            <h1>Aftermath</h1>
+                            <p>
+                                Singapore had a total of 238 cases of SARS in total, and the disease caused 33 deaths.
+                                There were repercussions after the incident. There were economies affected, particularly tourism as visitors number plunged as a result of SARS. At the height of the outbreak, Singapore economy growth plunged from 2 percent to 5 percent to just 0.5 percent to 2.5 percent. The government then introduced a relief package of 230 million to help save jobs. There was also fear as people stay home more often and avoided crowded areas. However this incident highlighted the need for good hygiene.
+                            </p>
+                            <p>
+                                Following this incident, Singapore will definitely be more prepared to face the new coronavirus and know how to handle the situation following the lessons learnt from the SARS episode 17 years ago.
+                            </p>
+
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
                     <section>
-                        <h1>Introduction/Origin of SARS</h1>
-                        <p>
-                            The origin of SARS took place in 2002 where a then 45-year old man from Guangdong fell ill with fever and displayed respiratory symptoms in November 2002. He then infected four relatives but was not identified as the first SARS Patient until much later.
-                        </p>
-                    </section>
-                    <section>
-                        <h1>How it came to Singapore</h1>
-                        <p>
-                            First case happened in Singapore on March 1 2003. A woman who had been to Hong Kong fell ill and was admitted to Tan Tock Seng Hospital along with two other women. On March 15 2003, the disease has been coined as SARS. Singapore has 16 cases at the time.
-                        </p>
-                    </section>
-                    <section>
-                        <h1>Timeline of the incidents</h1>
-                        <p>
-                            On March 25 2003 Singapore experienced its first death from SARS. The father of the first case.
-                            A day later, a pastor who visited the first patient becomes the second person to die from SARS. Schools were then closed from March 27 to April 6. People who died from SARS must also be cremated within 24 hours. Temperature checks were also introduced for passengers entering from Singapore through Changi Airport. SGH is then hit by the outbreak and closure of schools is extended. Schools were reopened from April 9 to 16. The last patient was detected on May 18 2003 and the Singapore was declared SARS free on May 30. SARS was completely eradicated in SIngapore on July 16 2003.
-                        </p>
-                    </section>
-                    <section>
-                        <h1>Aftermath</h1>
-                        <p>
-                            Singapore had a total of 238 cases of SARS in total, and the disease caused 33 deaths.
-                            There were repercussions after the incident. There were economies affected, particularly tourism as visitors number plunged as a result of SARS. At the height of the outbreak, Singapore economy growth plunged from 2 percent to 5 percent to just 0.5 percent to 2.5 percent. The government then introduced a relief package of 230 million to help save jobs. There was also fear as people stay home more often and avoided crowded areas. However this incident highlighted the need for good hygiene.
-                        </p>
-                        <p>
-                            Following this incident, Singapore will definitely be more prepared to face the new coronavirus and know how to handle the situation following the lessons learnt from the SARS episode 17 years ago.
-                        </p>
+                        <fieldset class="quiz">
+                            <h1 class="quizinfo">Quiz time</h1>
+                            <p class="quizinfo">Now that you have understand what happened, why not test yourself with a quiz</p>
+                            <a class="button" href="Quiz.html"><span style="text-align:center">Quiz</span></a>
+
+
+                        </fieldset>
+                        <br />
+                        <br />
+
+
+
+
 
                     </section>
                 </div>
             </div>
         </div>
-    </div>
-   <div class="container-fluid">
-       <div class="row">
-           <div class="col-sm-12">
-                   <section>
-                       <fieldset class="quiz">
-                           <h1 class="quizinfo">Quiz time</h1>
-                           <p class="quizinfo">Now that you have understand what happened, why not test yourself with a quiz</p>
-                           <a class="button" href="Quiz.html"><span style="text-align:center">Quiz</span></a>
-                                
-                           
-                       </fieldset>
-                       <br />
-                       <br />
-                       
-                     
-                           
-                       
-                 
-                   </section>
-             </div>
-       </div>
-   </div>
 
 
 
 
-</main>
+    </main>
 
     <div class="footer">
         <div class="container">

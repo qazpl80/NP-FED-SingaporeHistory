@@ -10,8 +10,7 @@
     border-style: solid;
     background-position: center;
     background-size: cover;
-    font-family: Arial;
-    -webkit-animation: fadein 2s;
+    font-family: Verdana;
 }
 
 .independencebody {
@@ -28,6 +27,8 @@
 
 .carousel {
     position: relative;
+    border: thick #0e0e0e;
+    border-style: solid;
 }
 
 .carousel-caption {

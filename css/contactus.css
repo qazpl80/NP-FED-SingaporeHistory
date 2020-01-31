@@ -20,7 +20,7 @@
     right: 50%;
     width: auto;
     height: auto;
-    font-family: Arial;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     padding: 30px;
     background-color:#111111
 }
@@ -33,4 +33,34 @@ form {
     border: 10px solid grey;
     padding:10px;
     display:inline-block;
+}
+
+.buttonsub {
+    background-color: #069400;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 3px 2px;
+    cursor: pointer;
+}
+
+.buttonres {
+    background-color: #808080;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 3px 2px;
+    cursor: pointer;
+}
+
+.buttonsize {
+    border-radius: 5px;
 }

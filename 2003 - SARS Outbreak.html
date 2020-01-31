@@ -112,9 +112,18 @@
        <div class="row">
            <div class="col-sm-12">
                    <section>
-                       <h1>Quiz time</h1>
-                       <p>Now that you have understand what happened, why not test yourself with a quiz</p>
-                       <button class="quiz" onclick="window.location.href = Quiz.html">Quiz</button>
+                       <fieldset>
+                           <h1>Quiz time</h1>
+                           <p>Now that you have understand what happened, why not test yourself with a quiz</p>
+                       </fieldset>
+                       <br />
+                       <br />
+                       <a class="button" href="Quiz.html">
+                           Quiz
+                       </a>
+                     
+                           
+                       
                  
                    </section>
              </div>
@@ -126,14 +135,16 @@
 
 </main>
 
-
-    <div>
-        <div>
-
-            <div w3-include-html="footer.html"></div>
+    <div class="footer">
+        <div class="container">
+            <div class="col">
+                <div class="row-sm-12">
+                    <div w3-include-html="footer.html"></div>
+                </div>
+            </div>
         </div>
     </div>
-              
+     
     <script>
         w3.includeHTML();
     </script>

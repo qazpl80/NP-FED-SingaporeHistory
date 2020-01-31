@@ -14,7 +14,9 @@ body {
     min-height:100%;
     min-width:100%;
 }
-
+.hidden {
+    display: none;
+}
 
 * {
     outline: none;

@@ -14,7 +14,7 @@
     <link rel=" stylesheet" href="css/zy.css"/>
     <script src="js/w3.js"></script>
     <script src="js/navbar.js"></script>
-    <script src="js/quiz.js"></script>
+    <script src="js/quiz.js" defer></script>
     
     <title>Support Us</title>
 </head>
@@ -26,34 +26,84 @@
                 <div w3-include-html="header.html"></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <form onsubmit="CalculateScore()">
-                    <h1>Order Form</h1>
-                    <fieldset id="cakeDetail">
-                        <label>When did SARS take place in Singapore?</label>
-                        <input type="radio" name="option" />July to December 2003
-                        <input type="radio" name="option" />June to September 2004
-                        <input type="radio" name="option" />March to July 2004
-                        <input type="radio" name="option" />March to July 2004
-                    </fieldset>
-                    
+      
+        <main class="quizmain">
+            
+            <div class="row">
+                <div class="col-sm-12">
+                    <form onload="CalculateScore()" onsubmit="submitquiz()">
+                        <h1>SARS outbreak quiz</h1>
+                        <fieldset id="Q1" oninput="CalculateScore()">
+                            <legend>When did SARS take place in Singapore?</legend>
+                            <input type="radio" name="optionQ1" id="Q1A" />July to December 2003
+                            <br />
+                            <input type="radio" name="optionQ1" id="Q1B" />June to September 2004
+                            <br />
+                            <input type="radio" name="optionQ1" id="Q1C" />March to July 2003
+                            <br />
+                            <input type="radio" name="optionQ1" id="Q1D" />March to July 2004
+                        </fieldset>
+                        <br />
 
-                    <fieldset>
-                    </fieldset>
+                        <fieldset oninput="CalculateScore()">
+                            <legend>When did Schools closed because of SARS?</legend>
+                            <input type="radio" name="optionQ2" id="Q2A" />March 27 to April 6
+                            <br />
+                            <input type="radio" name="optionQ2" id="Q2B" />March 15 to April 16
+                            <br />
+                            <input type="radio" name="optionQ2" id="Q2C" />April 6 to July 16
+                            <br />
+                            <input type="radio" name="optionQ2" id="Q2D" />Schools were never closed.
+                        </fieldset>
+                        <br />
+                        <fieldset oninput="CalculateScore()">
+                            <legend>How many deaths did SARS cause in Singapore?</legend>
+                            <input type="radio" name="optionQ3" id="Q3A" />45
+                            <br />
+                            <input type="radio" name="optionQ3" id="Q3B" />23
+                            <br />
+                            <input type="radio" name="optionQ3" id="Q3C" />92
+                            <br />
+                            <input type="radio" name="optionQ3" id="Q3D" />33
+                        </fieldset>
+                        <br />
+                        <fieldset oninput="CalculateScore()">
+                            <legend>When was SARS eradicated in Singapore?</legend>
+                            <input type="radio" name="optionQ4" id="Q4A" />12 July 2004
+                            <br />
+                            <input type="radio" name="optionQ4" id="Q4B" />4 July 2003
+                            <br />
+                            <input type="radio" name="optionQ4" id="Q4C" />16 July 2003
+                            <br />
+                            <input type="radio" name="optionQ4" id="Q4D" />1 March 2003
+                            <br />
+                        </fieldset>
+                        <br />
+                        <fieldset oninput="CalculateScore()">
+                            <legend>Which of the following statements are true about the incident?(Can pick more than one option)</legend>
+                            <input type="checkbox" name="optionQ5" id="correct1" />People who died from SARS must be cremated within 24 hours.
+                            <br />
+                            <input type="checkbox" name="optionQ5" id="correct2" />The last patient was detected on 18 May 2003.
+                            <br />
+                            <input type="checkbox" name="optionQ5" id="wrong1" />The government introduced a relief pacakage of 300 million.
+                            <br />
+                            <input type="checkbox" name="optionQ5" id="wrong2" />Vistors number increased after the incident.
+                        </fieldset>
 
 
-                    <p>
-                        <label id="totalScore"></label>
-                    </p>
+                        <p id="message">
 
-                    <br />
-                    <input type="submit" value="Submit" />
-                    <input type="reset" id="reset" onclick="clearMessage()" />
-                    <br />
-                </form>
+                        </p>
+
+                        <br />
+                        <input type="submit" value="Submit" />
+                        <input type="reset" id="reset" onclick="clearMessage()" />
+                        <br />
+                    </form>
+                </div>
             </div>
-        </div>
+        </main>
+        
     </div>
 
         <div>

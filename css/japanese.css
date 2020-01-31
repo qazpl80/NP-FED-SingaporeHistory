@@ -8,6 +8,15 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
 * {
     outline: none;
 }
@@ -16,6 +25,12 @@ body {
     padding: 86px 6.9444% 90px 6.9444%;
     position: relative ;
     overflow: hidden;
+
+}
+.small-margin{
+    position:relative;
+    overflow:hidden;
+
 }
 
     .carousel.one:after, .carousel.one:before {

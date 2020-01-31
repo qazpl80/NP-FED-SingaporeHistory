@@ -2,7 +2,7 @@
     text-align: center;
     padding: 30px;
     letter-spacing: 2px;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("../media/sgbackground.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url("../media/sgbackground.jpg");
     background-repeat: no-repeat;
     height: 100%;
     color: white;

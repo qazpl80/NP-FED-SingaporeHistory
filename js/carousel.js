@@ -1,6 +1,11 @@
 // JavaScript source code
-$(document).ready(function slick() {
-    $.js('timeline-carousel').slick({
+
+$.js = function (el) {
+    return $('[data-js=' + el + ']')
+};
+
+$(document).ready(function () {
+    $.js('carousel').slick({
         infinite: true,
         arrows: false,
         dotsClass: 'slick-dots',

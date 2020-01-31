@@ -7,14 +7,18 @@ main{
 body {
     font-family: Verdana, Arial, serif;
     font-size: 100%;
-    background-color: cornflowerblue;
+    background: url(../media/giphy.gif) no-repeat center center fixed;
+    background-size: cover;
     margin: 0px;
+    color: black;
+    text-shadow:1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue
 }
 
 form {
 
     margin: auto;
     padding: 10px 20px;
+   
 
 }
 .submitreset{
@@ -70,6 +74,8 @@ img {
     margin-left: auto;
     margin-right: auto;
     width:50%;
+    border:solid 3px black;
+
 }
 
 #da{

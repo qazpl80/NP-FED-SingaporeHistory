@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Gladys Chua Ling Hui" />
+    <meta name="description" content="Donation Page" />
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/donate.css" />
+    <script src="js/w3.js" ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <title>Support Me</title>
+
+</head>
+<body>
+    <div>
+        <div>
+
+
+            <div w3-include-html="header.html"></div>
+        </div>
+    </div>
+    <main>
+        <section id="s1">
+            <h3>Donate $1 and receive a replica of the banana money</h3>
+            <img src="media/banana money.jpg" />
+
+        </section>
+        <section id="s2">
+            <h3>Donate $5 and receive a replica of a stamp from thhe Japanese Occupation</h3>
+            <img src="media/stamp.jpg" />
+        </section>
+
+        <section id="s3">
+            <h3>Donate $10 and receive a Singapore Country Eraser EarStud</h3>
+            <img src="media/countryeraserstuds.jpg" />
+        </section>
+        <form id="order-form" autocomplete="off">
+            <div id="option">
+                <input type="checkbox" name="money" value="1.00">$1.00
+                <input type="checkbox" name="money" value="5.00">$5.00
+                <input type="checkbox" name="money" value="10.00">$10.00
+            </div>
+            <fieldset>
+                <legend>Deliver to:</legend>
+                <label for="iName" class="labelAlign">Name:</label>
+                <input id="iName" class="boxWidth" name="Name" type="text" autocomplete="Name" required />
+                <br />
+                <label for="iAddress" class="labelAlign">Address:</label>
+                <textarea id="iAddress" class="boxWidth" rows="2" cols="20" name="Address" autocomplete="on" required></textarea>
+                <label for="iPostalCode" class="labelAlign">Postal Code:</label>
+                <input id="iPostalCode" type="text" maxlength="6" size="6" name="PostalCode" required pattern="\d{6}" />
+                <br />
+                <label for="iTelephone" class="labelAlign">Phone #:</label>
+                <input type="tel" id="iTelephone" class="boxWidth" name="Phone" size="8" pattern="[689]\d{7}" required />
+                <br />
+                <label for="iEmail" class="labelAlign">Email:</label>
+                <input type="email" id="iEmail" class="boxWidth" name="Email" width="200" placeholder="Enter email addresses" required />
+                <br />
+                <input type="submit" value="Submit" />
+                <input type="reset" id="reset" onclick="clearMessage()" />
+            </fieldset>
+        </form>
+    </main>
+    <div>
+        <div>
+
+            <div w3-include-html="footer.html"></div>
+        </div>
+    </div>
+
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -41,7 +41,8 @@ form {
 }
 
 h1 {
-    color: brown;
+    color: white;
+    text-align: center;
 }
 
 fieldset {
@@ -87,9 +88,19 @@ textarea {
 }
 
 main{
-    background-color:blue;
+    background-color:black;
+    color: white;
+    
+}
+
+p{
+    text-align:center;
 }
 
 .footer{
     background-color:black;
+}
+
+.background {
+    background-image: url('../media/background.jfif');
 }

@@ -7,7 +7,9 @@ fieldset {
     padding: 10px 20px 20px 20px;
     margin: 0 0 40px 0;
 }
-
+main{
+    padding-top:40px;
+}
 form {
     margin: 0px 100px 0 100px;
 }

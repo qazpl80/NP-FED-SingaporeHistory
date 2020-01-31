@@ -61,8 +61,7 @@ legend {
 
 
 .button{
-    display:inline-block;
-    margin: 3px;
+    padding: 3px;
     background-color: red;
     font-family: Arial;
     border-radius:5px;

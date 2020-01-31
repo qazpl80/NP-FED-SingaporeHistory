@@ -1,0 +1,34 @@
+figure {
+    -webkit-transition: width 2s;
+}
+
+
+h1 {
+	color: white;
+	background-color: #4d1a00;
+}
+
+h2 {
+	color: white;
+}
+
+h3 {
+	color: white;
+}
+
+body {
+	background-color: black;
+}
+
+section {
+	background-color: black;
+	width: 1000px;
+	border: 15px white;
+	padding: 50px;
+	margin: 20px;
+}
+
+p {
+	color: white;
+}
+

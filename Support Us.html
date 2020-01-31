@@ -23,6 +23,29 @@
                 <div w3-include-html="header.html"></div>
             </div>
         </div>
+        <div class="container-fluid">
+            <div w3-include-html="header.html"></div>
+            <form onsubmit="return validate()">
+                <fieldset class="form-field">
+                    <h3>Support Us!</h3>
+                    
+                    <label>Donate: </label>
+                    <input type="number" min="1" id="quantity" onchange="total()" required" />
+                    <br />
+                    <label>Name</label>
+                    <input type="text" value="Peter" id="name" required />
+                    <br />
+                    <label>Credit Card Date: </label>
+                    <input type="date" required id="date" onchange="onDate()" />
+                    <br /><br />
+                    
+                </fieldset>
+                <input type="submit" id="submit" onclick="onSubmit()" />
+                <input type="reset" onclick="onReset()" /><br /><br />
+                <label id="Apprecite it!"></label>
+            </form>
+            
+        </div>
 
         <div>
             <div>
